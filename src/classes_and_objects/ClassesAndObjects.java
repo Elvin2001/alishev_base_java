@@ -12,9 +12,11 @@ public class ClassesAndObjects {
         person2.speak();
 
         Person person3 = new Person("Makar", 28);
+        person3.setAge(25);
         person3.speak();
 
         Person person4 = new Person("Roman", 12);
+        person4.setName("Abubakar");
         person4.speak();
 
         List<Person> persons = new ArrayList<>();
@@ -43,6 +45,14 @@ class Person {
 
     public int getAge() {
         return age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void speak() {
